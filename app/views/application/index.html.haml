@@ -1,0 +1,62 @@
+.small-12.columns
+  %nav
+    %ul
+      %li
+        = link_to 'BRING', '#bring'
+      %li
+        = link_to 'AGENDA', '#agenda'
+      %li
+        = link_to 'INVITE', '#invite'
+      %li
+        = link_to 'OPENINGS', '#openings'
+.small-12.columns.centered.header
+  = image_tag 'docked.jpg'
+  .text
+    %h1 CASSIOPEIA
+    %h4 SAN FRANCISCO, CA
+.small-12.columns#bring.content
+  %h3 BRING
+  .small-6.columns.small-centered
+    %ul
+      .small-4.columns
+        %li
+          = render 'shared/icons/water.svg'
+          = render 'shared/icons/use_icon', icon: 'drop'
+          %p Water
+      .small-4.columns
+        %li
+          = render 'shared/icons/hotdog.svg'
+          = render 'shared/icons/use_icon', icon: 'hotdog'
+          %p Snacks
+      .small-4.columns
+        %li
+          = render 'shared/icons/shades.svg'
+          = render 'shared/icons/use_icon', icon: 'shades'
+          %p Sunglasses
+      .small-4.columns
+        %li
+          = render 'shared/icons/toaster.svg'
+          = render 'shared/icons/use_icon', icon: 'toaster'
+          %p Sunscreen
+      .small-4.columns
+        %li
+          = render 'shared/icons/paper_boat.svg'
+          = render 'shared/icons/use_icon', icon: 'paper-boat'
+          %p Hat
+      .small-4.columns
+        %li
+          = render 'shared/icons/mcfly.svg'
+          = render 'shared/icons/use_icon', icon: 'mcfly'
+          %p Layers
+.small-12.columns#agenda.content
+  %h3 AGENDA
+  .small-4.columns.small-centered
+    %p Unless otherwise stated, let's meet at Cafe Powderface near Fruitvale BART around 10:30am.  We'll have a nice breakfast together, and then we can bike or drive to the marina around 11:30am.  By then the sky should open up, and we should have some nice sun.  Expect to be on the water until 5pm or 6pm, unless you or someone else needs to come back early.  It's pretty relaxed.  Don't worry if you've never sailed before or don't know how to sail.  No experience is necessary.  It will be a lot of fun.
+#invite
+  .small-12.columns
+    %h3 INVITE
+    = link_to 'Send a request', 'mailto:nathanielwroblewski@gmail.com?subject="Request to come sailing"', class: 'button'
+#openings
+  .small-12.columns
+    %h3 OPENINGS
+    %p 

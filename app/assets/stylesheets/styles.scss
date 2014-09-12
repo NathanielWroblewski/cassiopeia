@@ -1,0 +1,91 @@
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #464646;
+}
+
+.centered {
+  text-align: center;
+}
+
+.header {
+  padding: 0;
+
+  img {
+    position: relative;
+    width: 100%;
+  }
+
+  .text {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 40%;
+  }
+
+  h1, h4 {
+    color: white;
+    margin: 0;
+  }
+
+  h4 { letter-spacing: 1.6px; }
+
+  @media only screen and (min-width: 40.063em) {
+    h4 { top: 60%; }
+  }
+
+  @media only screen and (max-width: 40em) {
+    h4 { top: 65%; }
+  }
+}
+
+nav ul {
+  margin: 0;
+  padding: 25px;
+  list-style-type: none;
+  text-align: center;
+
+  li {
+    display: inline;
+    padding: 10px;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+.content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#bring {
+  background-color: white;
+
+  ul {
+    margin: 0;
+    padding: 25px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  ul li {
+    display: inline;
+  }
+
+  .iconmelon svg {
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray;                       /* IE6-9 */
+    -webkit-filter: grayscale(1);       /* Google Chrome, Safari 6+ & Opera 15+ */
+  }
+}
+
+#agenda {
+  background-color: #F5F5F5;
+}
+
+#invite {
+  background-color: #ECECEC;
+}
