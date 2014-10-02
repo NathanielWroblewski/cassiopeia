@@ -72,6 +72,10 @@ h3 {
     display: inline;
   }
 
+  ul > div {
+    margin-bottom: 30px;
+  }
+
   .iconmelon svg {
     margin: 0 auto;
     height: 60px;
@@ -79,6 +83,12 @@ h3 {
     filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
     filter: gray;                       /* IE6-9 */
     -webkit-filter: grayscale(1);       /* Google Chrome, Safari 6+ & Opera 15+ */
+  }
+
+  .water, .mcfly {
+    .iconmelon svg {
+      padding-left: 10px;
+    }
   }
 }
 
@@ -88,4 +98,15 @@ h3 {
 
 #invite {
   background-color: #ECECEC;
+  text-align: center;
+}
+
+#map-canvas {
+  height: 400px;
+  width: 100%;
+}
+
+.nomargin {
+  margin: 0;
+  padding: 0;
 }
